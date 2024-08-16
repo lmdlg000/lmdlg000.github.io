@@ -18,8 +18,8 @@
   
     <meta name="description" content="准备1. 安装nodejs官网下载：https:&#x2F;&#x2F;nodejs.cn&#x2F;download&#x2F;下载安装包，然后运行安装程序。              提示Windows:建议把安装路径改为C盘以外，例如D:\Program Files\nodejs。Linux发行版：对于Debian系和RedHat系，请确保curl已安装。如果还没有安装curl，可以执行以下命令：1234# Debian系：sud">
 <meta property="og:type" content="article">
-<meta property="og:title" content="个人博客搭建流程（Hexo&amp;Fluid）">
-<meta property="og:url" content="https://lmdlg000.github.io/2024/08/10/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%B5%81%E7%A8%8B-Hexo-Fluid/index.html">
+<meta property="og:title" content="个人博客搭建流程（使用Hexo和Fluid主题）">
+<meta property="og:url" content="https://lmdlg000.github.io/2024/08/10/build-a-blog-website/index.html">
 <meta property="og:site_name" content="lmdlg000">
 <meta property="og:description" content="准备1. 安装nodejs官网下载：https:&#x2F;&#x2F;nodejs.cn&#x2F;download&#x2F;下载安装包，然后运行安装程序。              提示Windows:建议把安装路径改为C盘以外，例如D:\Program Files\nodejs。Linux发行版：对于Debian系和RedHat系，请确保curl已安装。如果还没有安装curl，可以执行以下命令：1234# Debian系：sud">
 <meta property="og:locale" content="zh_CN">
@@ -34,7 +34,7 @@
   
   
   
-  <title>个人博客搭建流程（Hexo&amp;Fluid） - lmdlg000</title>
+  <title>个人博客搭建流程（使用Hexo和Fluid主题） - lmdlg000</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -296,7 +296,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="个人博客搭建流程（Hexo&amp;Fluid）"></span>
+            <span id="subtitle" data-typed-text="个人博客搭建流程（使用Hexo和Fluid主题）"></span>
           
         </div>
 
@@ -372,16 +372,15 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">个人博客搭建流程（Hexo&amp;Fluid）</h1>
+            <h1 id="seo-header">个人博客搭建流程（使用Hexo和Fluid主题）</h1>
             
             
               <div class="markdown-body">
                 
-                <link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><h2 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h2><h3 id="1-安装nodejs"><a href="#1-安装nodejs" class="headerlink" title="1. 安装nodejs"></a>1. 安装nodejs</h3><p>官网下载：<a target="_blank" rel="noopener" href="https://nodejs.cn/download/">https://nodejs.cn/download/</a><br>下载安装包，然后运行安装程序。</p>
+                <h2 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h2><h3 id="1-安装nodejs"><a href="#1-安装nodejs" class="headerlink" title="1. 安装nodejs"></a>1. 安装nodejs</h3><p>官网下载：<a target="_blank" rel="noopener" href="https://nodejs.cn/download/">https://nodejs.cn/download/</a><br>下载安装包，然后运行安装程序。</p>
 <div class="note note-info">
             <h3 id="提示"><a href="#提示" class="headerlink" title="提示"></a>提示</h3><h4 id="Windows"><a href="#Windows" class="headerlink" title="Windows:"></a>Windows:</h4><p>建议把安装路径改为C盘以外，例如<code>D:\Program Files\nodejs</code>。</p><h4 id="Linux发行版："><a href="#Linux发行版：" class="headerlink" title="Linux发行版："></a>Linux发行版：</h4><p>对于Debian系和RedHat系，请确保curl已安装。如果还没有安装curl，可以执行以下命令：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># Debian系：</span><br>sudo apt-get install -y curl<br><span class="hljs-comment"># RedHat系：</span><br>sudo yum install -y curl<br></code></pre></td></tr></table></figure><h5 id="添加源并安装nodejs："><a href="#添加源并安装nodejs：" class="headerlink" title="添加源并安装nodejs："></a>添加源并安装nodejs：</h5><p>Debian系： </p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">curl -fsSL https://deb.nodesource.com/setup_20.x | sudo bash -<br>sudo apt-get install -y nodejs<br></code></pre></td></tr></table></figure><p>RedHat系：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">curl -fsSL https://rpm.nodesource.com/setup_20.x | sudo bash -<br>sudo yum install -y nsolid<br></code></pre></td></tr></table></figure><p>ArchLinux：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">sudo pacman -S nodejs<br></code></pre></td></tr></table></figure><p>更多信息：<a target="_blank" rel="noopener" href="https://github.com/nodesource/distributions">https://github.com/nodesource/distributions</a></p>
           </div>
-
 <p>nodejs包含node和npm二进制包。</p>
 <h4 id="验证是否正确安装"><a href="#验证是否正确安装" class="headerlink" title="验证是否正确安装"></a>验证是否正确安装</h4><p>验证node:</p>
 <figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs sh">node -v<br>或者<br>node --version<br></code></pre></td></tr></table></figure>
@@ -392,11 +391,9 @@
 <figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs sh">npm config <span class="hljs-built_in">set</span> registry https://registry.npmmirror.com<br></code></pre></td></tr></table></figure>
 <p>还原命令：</p>
 <figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs sh">npm config <span class="hljs-built_in">set</span> registry https://registry.npmjs.org/<br></code></pre></td></tr></table></figure>
-
 <div class="note note-warning">
             <h3 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h3><p>若使用Linux发行版，在进行安装、换源等操作时，请在每一行命令前加上sudo，例如：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">sudo npm config <span class="hljs-built_in">set</span> registry https://registry.npmmirror.com<br></code></pre></td></tr></table></figure>
           </div>
-
 <p>安装途中如果提示npm更新执行命令，输入：</p>
 <figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs sh">npm install npm@latest -g<br></code></pre></td></tr></table></figure>
 <h3 id="2-安装git"><a href="#2-安装git" class="headerlink" title="2. 安装git"></a>2. 安装git</h3><p>官网下载：<a target="_blank" rel="noopener" href="https://git-scm.com/downloads">https://git-scm.com/downloads</a><br>下载安装包，然后运行安装程序。<br>Linux发行版安装命令：<a target="_blank" rel="noopener" href="https://git-scm.com/download/linux">https://git-scm.com/download/linux</a></p>
@@ -419,7 +416,7 @@
 <p>查看是否能启动成功</p>
 <figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs sh">hexo s<br></code></pre></td></tr></table></figure>
 <p>打开<a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000</a> ，按Ctrl+C中止。<br>更多信息：<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/">https://hexo.io/zh-cn/docs/</a></p>
-<h2 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h2><h3 id="1-打开站点配置文件-config-yml，编辑"><a href="#1-打开站点配置文件-config-yml，编辑" class="headerlink" title="1. 打开站点配置文件_config.yml，编辑"></a>1. 打开站点配置文件_config.yml，编辑</h3><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-comment"># Site</span><br><span class="hljs-attr">title:</span> <span class="hljs-string">&#x27;&#x27;</span> <span class="hljs-comment"># 网站title</span><br><span class="hljs-attr">subtitle:</span> <span class="hljs-string">&#x27;&#x27;</span> <span class="hljs-comment"># 小标题</span><br><span class="hljs-attr">description:</span> <span class="hljs-string">&#x27;&#x27;</span> <span class="hljs-comment"># 网站描述</span><br><span class="hljs-attr">keywords:</span> <span class="hljs-comment"># 网站关键字</span><br><span class="hljs-attr">author:</span> <span class="hljs-comment"># 网站作者名字</span><br><span class="hljs-attr">language:</span> <span class="hljs-string">zh-CN</span> <span class="hljs-comment"># 语言，中国大陆zh-CN，中国香港zh-HK，中国澳门zh-MO，中国台湾zh-TW</span><br><span class="hljs-attr">timezone:</span> <span class="hljs-string">&#x27;Asia/Shanghai&#x27;</span> <span class="hljs-comment"># 时区，中国为Asia/Shanghai</span><br><br><span class="hljs-comment"># URL</span><br><span class="hljs-attr">url:</span> <span class="hljs-comment"># 域名</span><br><br><span class="hljs-comment">## 中间内容省略</span><br><br><span class="hljs-comment"># Deployment</span><br><span class="hljs-attr">deploy:</span><br>  <span class="hljs-attr">type:</span> <span class="hljs-string">git</span><br>  <span class="hljs-attr">repo:</span> <span class="hljs-string">git@github.com:yourname/yourname.github.io.git</span><br>  <span class="hljs-attr">branch:</span> <span class="hljs-string">main</span><br></code></pre></td></tr></table></figure>
+<h2 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h2><h3 id="1-打开站点配置文件-config-yml，编辑"><a href="#1-打开站点配置文件-config-yml，编辑" class="headerlink" title="1. 打开站点配置文件_config.yml，编辑"></a>1. 打开站点配置文件_config.yml，编辑</h3><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-comment"># Site</span><br><span class="hljs-attr">title:</span> <span class="hljs-string">&#x27;&#x27;</span> <span class="hljs-comment"># 网站title</span><br><span class="hljs-attr">subtitle:</span> <span class="hljs-string">&#x27;&#x27;</span> <span class="hljs-comment"># 小标题</span><br><span class="hljs-attr">description:</span> <span class="hljs-string">&#x27;&#x27;</span> <span class="hljs-comment"># 网站描述</span><br><span class="hljs-attr">keywords:</span> <span class="hljs-comment"># 网站关键字</span><br><span class="hljs-attr">author:</span> <span class="hljs-comment"># 网站作者名字</span><br><span class="hljs-attr">language:</span> <span class="hljs-string">zh-CN</span> <span class="hljs-comment"># 语言，中国大陆zh-CN，中国香港zh-HK，中国澳门zh-MO，中国台湾zh-TW</span><br><span class="hljs-attr">timezone:</span> <span class="hljs-string">&#x27;Asia/Shanghai&#x27;</span> <span class="hljs-comment"># 时区，中国为Asia/Shanghai</span><br><span class="hljs-comment"># URL</span><br><span class="hljs-attr">url:</span> <span class="hljs-comment"># 域名</span><br><br><span class="hljs-comment">## 中间内容省略</span><br><br><span class="hljs-comment"># Deployment</span><br><span class="hljs-attr">deploy:</span><br>  <span class="hljs-attr">type:</span> <span class="hljs-string">git</span><br>  <span class="hljs-attr">repo:</span> <span class="hljs-string">git@github.com:yourname/yourname.github.io.git</span><br>  <span class="hljs-attr">branch:</span> <span class="hljs-string">main</span><br></code></pre></td></tr></table></figure>
 <h3 id="2-安装deploy-git"><a href="#2-安装deploy-git" class="headerlink" title="2. 安装deploy-git"></a>2. 安装deploy-git</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs sh">npm install hexo-deployer-git --save<br></code></pre></td></tr></table></figure>
 <h3 id="3-部署"><a href="#3-部署" class="headerlink" title="3. 部署"></a>3. 部署</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs sh">hexo clean<br><span class="hljs-comment">#清除缓存文件 db.json 和已生成的静态文件 public</span><br>hexo g<br><span class="hljs-comment">#生成（generate）网站静态文件到默认设置的public文件夹</span><br>hexo d<br><span class="hljs-comment">#自动生成网站静态文件，并部署（deploy）到设定的仓库</span><br></code></pre></td></tr></table></figure>
 <p>最后检查Github仓库。<br>现在可以使用<a target="_blank" rel="noopener" href="https://yourname.github.io/">https://yourname.github.io</a> 访问博客了。<br>（可以设置个人域名，但是需要花钱）</p>
@@ -470,11 +467,13 @@
 <td align="left">keywords</td>
 <td>文章关键字</td>
 </tr>
+<tr>
+<td align="left">如：</td>
+<td></td>
+</tr>
 </tbody></table>
-<p>如：</p>
 <figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><code class="hljs markdown">---<br>title: My<span class="hljs-emphasis">_New_</span>Post<br>date: 2024-1-1 08:00:00<br>tags:<br><span class="hljs-bullet">-</span> 1<br><span class="hljs-bullet">-</span> 2<br>categories:<br><span class="hljs-bullet">-</span> 3<br><span class="hljs-bullet">-</span> 4<br>keywords:<br><span class="hljs-bullet">-</span> 5<br><span class="hljs-section">- 6</span><br><span class="hljs-section">---</span><br></code></pre></td></tr></table></figure>
-<h3 id="3-Markdown内容"><a href="#3-Markdown内容" class="headerlink" title="3. Markdown内容"></a>3. Markdown内容</h3><p>Hexo 支持大多数的 MD 语法，如果对MD语法还不熟悉，可以查看该教程：菜鸟教程-Markdown 教程<a target="_blank" rel="noopener" href="https://www.runoob.com/markdown/md-tutorial.html">https://www.runoob.com/markdown/md-tutorial.html</a></p>
-<p>最后部署到GitHub。</p>
+<h3 id="3-Markdown内容"><a href="#3-Markdown内容" class="headerlink" title="3. Markdown内容"></a>3. Markdown内容</h3><p>Hexo 支持大多数的 MD 语法，如果对MD语法还不熟悉，可以查看该教程：菜鸟教程-Markdown 教程<a target="_blank" rel="noopener" href="https://www.runoob.com/markdown/md-tutorial.html">https://www.runoob.com/markdown/md-tutorial.html</a><br>最后部署到GitHub。</p>
 
                 
               </div>
@@ -522,8 +521,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>个人博客搭建流程（Hexo&amp;Fluid）</div>
-      <div>https://lmdlg000.github.io/2024/08/10/个人博客搭建流程-Hexo-Fluid/</div>
+      <div>个人博客搭建流程（使用Hexo和Fluid主题）</div>
+      <div>https://lmdlg000.github.io/2024/08/10/build-a-blog-website/</div>
     </div>
     <div class="license-meta">
       
@@ -566,6 +565,12 @@
                 <div class="post-prevnext my-3">
                   <article class="post-prev col-6">
                     
+                    
+                      <a href="/2024/08/15/zsh-without-omz/" title="不使用oh-my-zsh的zsh">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">不使用oh-my-zsh的zsh</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
                     
                   </article>
                   <article class="post-next col-6">
